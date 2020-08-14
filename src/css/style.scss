@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
 
-$cubicBezier: cubic-bezier(0,1.2,.45,-0.59);
+$cubicBezier: cubic-bezier(0, 1.2, 0.45, -0.59);
 
 body,
 html {
@@ -41,21 +41,21 @@ h5 {
 .neu-card {
   padding: 2rem;
   border-radius: 0.5rem;
-  
-    animation: breathing-neumorphism 5s $cubicBezier 0s infinite alternate;
+
+  animation: breathing-neumorphism 5s $cubicBezier 0s infinite alternate;
 }
 
 @keyframes breathing-neumorphism {
-    from {
-        box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0),
-        -8px -8px 12px 0 rgba(255, 255, 255, 0);
-    }
-  
-    to {
-        box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-        -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    }
+  from {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0);
   }
+
+  to {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  }
+}
 
 .logo-wrapper {
   width: 100%;
@@ -71,7 +71,6 @@ h5 {
     height: 100px;
   }
 }
-
 
 .image-wrapper {
   width: 300px;
@@ -91,13 +90,13 @@ h5 {
 }
 
 .btn-contact {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    background: #ffbaaf;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #ffbaaf;
+  color: #212529;
+  &:hover {
     color: #212529;
-    &:hover {
-        color: #212529;
     box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25),
       -4px -4px 6px 0 rgba(255, 255, 255, 0.3);
   }
