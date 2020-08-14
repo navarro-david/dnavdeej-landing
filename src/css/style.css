@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
-body, html {
+body,
+html {
   font-family: "Poppins", sans-serif;
   background: #ffd0c8;
+  background: linear-gradient(-45deg, #ffecc8, #ffd0c8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 100%;
   display: flex;
@@ -22,6 +25,20 @@ h5 {
   color: #212529;
 }
 
+.neu-card {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  animation: breathing-neumorphism 5s cubic-bezier(0, 1.2, 0.45, -0.59) 0s infinite alternate;
+}
+
+@keyframes breathing-neumorphism {
+  from {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0), -8px -8px 12px 0 rgba(255, 255, 255, 0);
+  }
+  to {
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  }
+}
 .logo-wrapper {
   width: 100%;
   margin-bottom: 2rem;
@@ -51,11 +68,24 @@ h5 {
   /*magic*/
 }
 
+.btn-contact {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #ffbaaf;
+  color: #212529;
+}
+.btn-contact:hover {
+  color: #212529;
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -4px -4px 6px 0 rgba(255, 255, 255, 0.3);
+}
+
 .btn-link-black {
   color: #212529;
 }
 .btn-link-black:hover {
-  color: #4e5862;
+  color: #212529;
+  box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.25), -4px -4px 6px 0 rgba(255, 255, 255, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
