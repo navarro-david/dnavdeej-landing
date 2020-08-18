@@ -34,9 +34,11 @@ h5 {
 @keyframes breathing-neumorphism {
   from {
     box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0), -8px -8px 12px 0 rgba(255, 255, 255, 0);
+    background: rgba(255, 208, 200, 0);
   }
   to {
     box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    background: #ffd0c8;
   }
 }
 .logo-wrapper {
